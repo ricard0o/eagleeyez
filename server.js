@@ -1,37 +1,12 @@
-const express = require('express')
-const app = express()
-const port = 4000
-const path = require('path')
-const router = express.Router()
+var express = require('express');
+var app     = express();
 
+app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static('public'))
-//app.use('/src', express.static(__dirname + '/src/js'))
-
-/*app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/docs/src/index.html')
-}) */
-
-router.get('/', function(req, res) {
-    res.sendFile(__dirname + '/public/index.html')
+//For avoidong Heroku $PORT error
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
 });
-router.get('/about.html', function(req, res)  {
-    res.sendFile(path.join(__dirname + '/public/about.html'))
-})
-
-router.get('/index.html', function(req, res)  {
-    res.sendFile(path.join(__dirname + '/public/index.html'))
-})
-
-router.get('/documentation.html', function(req, res)  {
-    res.sendFile(path.join(__dirname + '/public/documentation.html'))
-})
-
-router.get('/', function(req, res)  {
-    res.sendFile(path.join(__dirname + '/docs/css/styles.css'))
-})
-
-app.use('/', router);
-app.listen(process.env.port || 5000);
-
-/*app.listen(port, () => console.info('App listening on port ${port}'))*/
