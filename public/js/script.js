@@ -153,7 +153,7 @@ async function getData() {
         
       }
       
-      slt.innerHTML = array.length + " new hits were added to the list based on the info you entered";   
+      slt.innerHTML = array.length + " new results were added to the list based on the info you entered";   
 
  
 
