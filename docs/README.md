@@ -4,7 +4,8 @@ Eagleeyez is a web-based application designed to solve the lack of information a
 
 # eagleeyez Heroku Site
 https://eagleeyez.herokuapp.com/
-#Supported Browsers 
+
+# Supported Browsers 
 Chrome
 
 # Installation
