@@ -1,4 +1,4 @@
-#eagleeyez
+# eagleeyez
 
 Eagleeyez is a web-based application designed to solve the lack of information accessible to PG county residents. With eagleeyez, residents can access up-to-date crime data via the search bar. Additionally, users can choose the type of crime they are inquiring about, input a street number and street address in order to identify the amount of crimes occurring in that area. The website would then present them with the number of [x] crimes that have occurred in that area. 
 
