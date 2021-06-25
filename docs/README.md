@@ -10,13 +10,18 @@ Chrome
 
 # Installation
 Have an up-to-date version of Node.js: (https://nodejs.org/)
+
 use GitHub Desktop
 
 # Dependencies
 npm install
+
 Npm packages include:
+
 Express - Node.js server framework
+
 Nodemon - Restart node server while coding changes
+
 
 # Bugs
 No security implemented
